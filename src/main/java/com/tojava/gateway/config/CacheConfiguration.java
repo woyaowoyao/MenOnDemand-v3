@@ -84,6 +84,13 @@ public class CacheConfiguration {
             createCache(cm, com.tojava.gateway.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.tojava.gateway.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.tojava.gateway.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.Mentor.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.MentorSkill.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.MyCalendar.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.Training.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.TrainingRecord.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.PaymentRecord.class.getName(), jcacheConfiguration);
+            createCache(cm, com.tojava.gateway.domain.Technology.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
