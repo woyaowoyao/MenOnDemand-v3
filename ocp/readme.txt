@@ -6,7 +6,7 @@ ADD_REGISTRY='--add-registry docker.io'
 #增加一行end
  sudo systemctl restart docker
  
-  sudo -i
+sudo -i
 
 mvn -Pprod verify jib:dockerBuild
 mvn -Pprod verify jib:dockerBuild
