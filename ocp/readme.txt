@@ -8,11 +8,11 @@ ADD_REGISTRY='--add-registry docker.io'
  
   sudo -i
 
-  mvn -Pprod verify jib:dockerBuild
- mvn -Pprod verify jib:dockerBuild
- sudo docker login 
- docker image tag vuegatewayv3 robin9999/vuegatewayv3
-  docker push docker.io/robin9999/vuegatewayv3
+mvn -Pprod verify jib:dockerBuild
+mvn -Pprod verify jib:dockerBuild
+sudo docker login 
+docker image tag vuegatewayv3 robin9999/vuegatewayv3
+docker push docker.io/robin9999/vuegatewayv3
 
 cd ocp  
 sh ocp-apply.sh
